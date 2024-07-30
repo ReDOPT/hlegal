@@ -1,0 +1,111 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 16px;
+  font-style: normal;
+}
+.montserrat a {
+  text-decoration: none;
+}
+
+.conteiner {
+  width: 91.6666666667%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+.header .header__logolawcompani .header__logo {
+  display: flex;
+  align-items: self-start;
+}
+.header .header__menu {
+  width: 36.2121212121%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.header .header__menu .header__menu-info {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.header .header__menu .header__menu-info .header__menu-info-language_font {
+  color: #B3B3BA;
+  font-weight: 700;
+  font-size: 12px;
+}
+.header .header__menu .header__menu-info .header__menu-info-language_font a {
+  color: #B3B3BA;
+}
+.header .header__menu .header__menu-info .header__menu-info-language_hover a {
+  padding: 5px 6.5px;
+  border-radius: 8px;
+}
+.header .header__menu .header__menu-info .header__menu-info-language_hover a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.header .header__menu .header__menu-info .header__menu-info-map_font {
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0px;
+  color: #B3B3BA;
+}
+.header .header__menu .header__menu-info .header__menu-info-map_font a {
+  color: #B3B3BA;
+}
+.header .header__menu .header__menu-info .header__menu-info-tel_font {
+  color: #B3B3BA;
+  font-weight: 700;
+  font-size: 16px;
+}
+.header .header__menu .header__menu-info .header__menu-info-tel_font a {
+  color: #B3B3BA;
+}
+.header .header__menu .header__menu-info .header__menu-info-facebook {
+  color: #B3B3BA;
+  padding-bottom: 10px;
+}
+.header .header__menu .header__menu-info .header__menu-info-facebook .header__menu-info-facebook-svg {
+  position: relative;
+  top: 6px;
+}
+.header .header__menu .header__menu-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 87.0292887029%;
+}
+.header .header__menu .header__menu-navigation_font {
+  font-weight: 700;
+  font-size: 16px;
+}
+.header .header__menu .header__menu-navigation_font a {
+  color: #24A3FF;
+}
+.header .header__menu .header__menu-navigation_hover a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
+  color: white;
+}
+
+.header_dark {
+  background-color: #323264;
+}
+.header_dark .header__logo-svg {
+  fill: white;
+}
+
+/*# sourceMappingURL=style.css.map */
