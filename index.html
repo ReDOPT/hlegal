@@ -10,48 +10,53 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-<header class="header header_dark conteiner">
-    <div class="header__logolawcompani">
-        <div class="header__logo">
-            <svg class="header__logo-h" viewBox="0 0 22 36" width="22" height="36">
-                <use href="./img/logo.svg#h" x="0" y="0"></use>
-            </svg>  
-            <svg class="header__logo-legal" viewBox="0 0 103 47" width="103" height="47">
-                <use href="./img/logo.svg#legal" x="0" y="0"></use>
-            </svg>  
-        </div>
-        <svg class="header__logo-law compani" viewBox="0 0 130 7" width="130" height="7">
-            <use href="./img/logo.svg#lawcompani" x="0" y="0"></use>
-        </svg>
-    </div>
-    <div class="header__menu montserrat">
-        <ul class="header__menu-info ">
-            <div class="header__menu-info-language header__menu-info-language_font header__menu-info-language_hover ">
-                <a href="#" class="header__menu-info-language-ua">УК</a>
-                <a href="#" class="header__menu-info-language-ru">РУ</a>
-                <a href="#" class="header__menu-info-language-en">EN</a>
+<div class="body">
+    <header class="header montserrat">
+        <div class="header__div conteiner">
+            <div class="header__logo">
+                <svg class="header__logo-svg" viewBox="0 0 130 60" width="130" height="60">
+                    <use href="./app/images/Logo.svg#logo" x="0" y="0"></use>
+                </svg> 
             </div>
-            <li class="header__menu-info-map header__menu-info-map_font">
-                <a  target="_blank" href="https://maps.app.goo.gl/hzqNJg9JPTGdLRPG7">Kyiv, Mechnikova str, 14/1</a>
-            </li>
-            <li class="header__menu-info-tel  header__menu-info-tel_font">
-                <a  href="tel:0800 211 927">0800 211 927</a>
-            </li>
-            <li class="header__menu-info-facebook">
-                <svg class="header__menu-info-facebook-svg" viewBox="0 0 24 25" width="24" height="25">
-                    <use href="./img/facebook-header2.svg" x="0" y="0"></use>
-                </svg>  
-            </li>
-        </ul>
-        <nav class="header__menu-navigation header__menu-navigation_font header__menu-navigation_hover">
-          <a href="">about us</a> 
-          <a href="">services</a> 
-          <a href="">team</a> 
-          <a href="">publications</a> 
-          <a href="">contact</a> 
-        </nav>
-        
-    </div>
-</header>    
+            <div class="header__menu">
+                <div class="header__menu-info conteiner-375width">
+                    <div class="header__menu-info-language header__menu-info-language_font header__menu-info-language_hover ">
+                        <a href="#" class="">УК</a>
+                        <a href="#" class="">РУ</a>
+                        <a href="#" class="">EN</a>
+                    </div>
+                    <span class="header__marker"></span>
+                    <div class="header__menu-info-map ">
+                        <a  target="_blank" href="https://maps.app.goo.gl/hzqNJg9JPTGdLRPG7">Kyiv, Mechnikova str, 14/1</a>
+                    </div>
+                    <span class="header__marker"></span>
+                    <div class="header__menu-info-tel">
+                        <a  href="tel:0800 211 927">0800 211 927</a>
+                    </div>
+                    <span class="header__marker"></span>
+                    <div class="header__menu-info-facebook">
+                        <svg class="header__menu-info-facebook-svg" viewBox="0 0 24 25" width="24" height="25">
+                            <use href="./app/images/facebook-header.svg#facebook" x="0" y="0"></use>
+                        </svg>  
+                    </div>
+                </div>
+                <nav class="header__box">
+                    <a class="header__button" href="#">
+                        <svg viewBox="0 0 32 32" width="32" height="32">
+                            <use href="./app/images/hamburger.svg#hamburger" x="0" y="0"></use>
+                        </svg>
+                    </a>  
+                    <nav class="header__nav">
+                        <a href="">about us</a> 
+                        <a href="">services</a> 
+                        <a href="">team</a> 
+                        <a href="">publications</a> 
+                        <a href="">contact</a>
+                    </nav> 
+                </nav>
+            </div>
+        </div>
+    </header>
+</div>    
 </body>
 </html>
