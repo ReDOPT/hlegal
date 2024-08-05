@@ -61,9 +61,8 @@
         display: flex;
         justify-content: space-between;
     }
-    &__button{
-        position: absolute;
-        opacity: 0;
+    &__button, .close{
+        display: none;
     }
 }
 @media screen and (min-width:1920px) {
@@ -97,19 +96,17 @@
         }
     }
 }
-@media screen and (max-width:375px) {
+@media screen and (max-width:450px) {
     .conteiner{
         width: 84.375%;
     }
     .conteiner-375width{
         width: 84.375%;
     }
-    .body{
-        position: relative;
-    }
     .header{
         padding-bottom: 200px;
         padding-top: 60px;
+        position: relative;
         &__menu-info{
             top: 0;
             left: 0;
@@ -138,32 +135,42 @@
                 height: 32px;
             }
         }
-        &__box{
-            width: max-content;
-            position: relative;
-        }
         &__nav{
-            visibility: hidden;
-            opacity: 0;
-            width: 110px;
-            flex-direction: column;
-            gap: 20px;
+            display: none;
+            width: 97%;
+            height: 53.8230884557721vb;
             position: absolute;
-            right: 10%;
+            right: 8px;
+            background-color: #E6E6F0;
+            border-radius: 12px 12px 0 0;
+            top: 46.1769115442279vb;
+
             a{
                 text-align: center;
-                border-radius: 5px;
-                padding: 3px;
-                background: #F5F5FA33;
+                color: #24A3FF;
             }
         }
         &__button{
-            position: static;
-            opacity: 1;
-            :hover>.header__nav{
-                visibility: visible;
-                opacity: 1;
+            display: block;
+        }
+        &__box{
+            width: max-content;
+            &:hover .header__nav{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 15px;
+                    font-size: 24px;
             }
+            &:active{
+                background: #e6e6f048;
+                border-radius: 8px ;
+            }
+        }
+        .close{
+            display: flex;
+            justify-content: flex-end;
+            padding: 12px 12px 5px 0px;
         }
     }
 }
