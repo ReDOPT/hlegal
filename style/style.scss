@@ -64,7 +64,13 @@
     &__button, .close{
         display: none;
     }
+    &__btn{
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+        display: none;
+    }
 }
+
 @media screen and (min-width:1920px) {
     .conteiner{
         width: 83.33333333333333%;
@@ -96,7 +102,7 @@
         }
     }
 }
-@media screen and (max-width:450px) {
+@media screen and (max-width:540px) {
     .conteiner{
         width: 84.375%;
     }
@@ -143,11 +149,19 @@
             right: 8px;
             background-color: #E6E6F0;
             border-radius: 12px 12px 0 0;
-            top: 46.1769115442279vb;
-
-            a{
+            top: 45.1769115442279vb;
+            padding-bottom: 12px;
+            a:nth-child(1n+2){
+                width: 88%;
+                background-color: #F5F5FA;
+                border-radius: 8px;
                 text-align: center;
                 color: #24A3FF;
+            }
+            div{
+                width: 100%;
+                display: flex;
+                justify-content: end;
             }
         }
         &__button{
@@ -155,22 +169,29 @@
         }
         &__box{
             width: max-content;
-            &:hover .header__nav{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    gap: 15px;
-                    font-size: 24px;
-            }
-            &:active{
+            &:hover{
                 background: #e6e6f048;
                 border-radius: 8px ;
             }
         }
-        .close{
-            display: flex;
-            justify-content: flex-end;
-            padding: 12px 12px 5px 0px;
+        &__nav-btn{
+            padding: 12px 12px 0 0;
+        }
+        &__btn{
+            display: block;
         }
     }
+}
+.burger-btn:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+.active{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+    font-size: 24px;
 }
