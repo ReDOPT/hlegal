@@ -2,6 +2,12 @@
     margin: 0px;
     padding: 0px;
 }
+img{
+    width: 100%;
+}
+.material-symbols-outlined{
+    font-size: 80%;
+}
 .montserrat{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -18,7 +24,12 @@
 }
 .body{
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-
+    border-radius:0 0 12px 12px ;
+    &__div{
+        background-image: url("../images/symbol.svg");
+        background-repeat:no-repeat ;
+        background-position: center;
+    }
 }
 .header{
     padding-top: 50px;
@@ -50,6 +61,16 @@
     }
     &__menu-info-language{
         font-size: 12px;
+        a{
+            padding: 5px;
+            border-radius: 8px;
+            &:last-child{
+                background-color: #F0145A;
+            }
+        }
+        a:hover{
+            background-color: #FFFFFF33;
+        }
     }
     &__menu-info-map{
         font-weight: 400;
@@ -60,6 +81,10 @@
     &__nav{
         display: flex;
         justify-content: space-between;
+        a:hover{
+            text-decoration:underline 2px;
+            text-underline-offset: 3px;
+        }
     }
     &__button, .close{
         display: none;
@@ -69,6 +94,215 @@
         border: none;
         display: none;
     }
+    &__menu-info-facebook-svg{
+        color: white;
+        :hover{
+            color: #F0145A;
+        }
+    }
+}
+.link-page{
+    color: #24A3FF;
+    font-size: 14px;
+    letter-spacing:1px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__h1{
+        margin-top: 261px;    
+    }
+    &__svg{
+        margin-top: 305px;
+    }
+}
+.title{
+    font-size: 2.375em;
+    color: #FFFFFF;
+    &__color{
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+    }
+}
+.compani{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: 75%;
+    padding: 60px 0;
+    margin: 0 auto;
+    &__nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: end;
+        gap: 15px;
+        width: 375px;
+        a{
+            color: #B3B3BA;
+         &:hover{
+            color: #F0145A;
+         }   
+        }
+        :first-child{
+            background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &__span{
+        width: 4px;
+        height: 233px;
+        background-color: #FFFFFF4D;
+
+    }
+    &__div{
+        width: 53.7962962962963%;
+        color: #FFFFFF;
+        h2{
+            font-size: 1.875em;
+        }
+        p{
+            margin-top: 30px;
+            font-size: 19px;
+        }
+    }
+}
+.services{
+    &__h2{
+        margin-top: 10px;
+    }
+    &__section{
+        margin-top:60px ;
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        gap: 60px normal;
+    }
+    &__section-div{
+        width: 30%;
+    }
+    &__img{
+        display:inline-block;
+        padding: 14px;
+        background-color: #FFFFFF;
+        border-radius: 24px;
+    }
+    &__h3{
+        margin-top: 30px;
+        font-size: 1.375em;
+        color: #24A3FF;
+    }
+    &__p{
+        margin-top: 15px;
+        font-weight: 400;
+        color: #FFFFFF;
+    }
+}
+.shadow{
+    margin-bottom: 60px;
+    span{
+        height: 10px;
+        display: flex;
+        margin: 0 auto;
+        border-radius: 0 0 12px 12px ;
+    }
+    span:first-child{
+        background-color: #CACADB;
+        width: 97.22222222222222%;
+    }
+    span:last-child{
+        width: 94.44444444444444%;
+        background-color: #E7E7F2;
+    }
+}
+.slick{
+    height: 344px;
+    &__div{
+        display: flex;
+    }
+    &__div-img{
+        width: 30.3030303030303%;
+    }
+    &__div-info{
+        padding: 30px;
+        width: 69%;
+    }
+    &__h2{
+        padding: 5px 0 0 0;
+    }
+    &__p{
+     color: #B3B3BA;
+     padding-top: 30px;
+     &:last-child{
+        padding-top:6px ;
+        font-size: 14px;
+        font-weight: 400;
+        color: #b3b3babb;
+     }    
+    }
+}
+.cooperation{
+    margin-top: 60px;
+    &__h2{
+        width: fit-content;
+        font-size: 14px;
+        margin: 106px auto 30px auto;
+    }
+    &>div{
+        display: flex;
+        flex-wrap: wrap; 
+    }
+    &__div{
+        height:120px;
+        width: 25%;
+        display: flex;
+        &:first-child{
+            background-color: #1C4280;
+        }
+        &:nth-child(2){
+            background-color:#143646 ;
+        }   
+        &:nth-child(3){
+            background: linear-gradient(0deg, #F48B30, #F48B30)
+
+        }
+        &:nth-child(4){
+            background-color:#9E4DC3 ;
+        }   
+        &:nth-child(5){
+            background-color:#FD9339 ;
+        }   
+        &:nth-child(6){
+            background-color:#E2E2E4 ;
+        }   
+        &:nth-child(7){
+            background-color:#C71C36 ;
+        }
+        &:nth-child(8){
+            background-color:#DCF3F9 ;
+        }   
+        &:nth-child(9){
+            background-color:#EAEAEA ;
+        }   
+        &:nth-child(10){
+            background-color:#282240 ;
+        }
+        &:nth-child(11){
+            background-color:#1D4568 ;
+        }   
+        &:last-child{
+            background-color: #000000;
+        }  
+        
+    }
+    &__img{
+        margin: auto auto;
+        width: fit-content;
+    }
+    
 }
 
 @media screen and (min-width:1920px) {
@@ -77,8 +311,14 @@
     }
 }
 @media screen and (max-width:1024px) {
-    .conteiner{
+    .conteiner,
+    .compani{
         width: 88.28125%;
+    }
+    .compani{
+        &__div{
+            width: 44.80088495575221%;
+        }
     }
 }
 @media screen and (max-width:768px) {
@@ -101,7 +341,30 @@
             bottom:145px;
         }
     }
+    .compani{
+        flex-direction: column;
+        width:84.375%;
+        &__span{
+            width: 80%;
+            height: 4px;
+        }
+        &__nav{
+            justify-content: baseline;
+            flex-direction: row;
+            width: 100%;
+            font-size: 16px;
+        }
+        &__div{
+            width: 100%;
+        }
+    }
+    .services{
+        &__section-div{
+            width: 44%;
+        }
+    }
 }
+
 @media screen and (max-width:540px) {
     .conteiner{
         width: 84.375%;
@@ -182,11 +445,6 @@
         }
     }
 }
-.burger-btn:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
 .active{
     align-items: center;
     display:flex;

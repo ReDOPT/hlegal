@@ -1,0 +1,1 @@
+$(".lol-slick").slick({dots:!0,infinite:!1,speed:300,slidesToShow:1,slidesToScroll:1});

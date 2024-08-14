@@ -23,7 +23,7 @@ gulp.task('create-directories', function(done) {
 
 // Задача для компиляции SCSS в CSS
 gulp.task('styles', function() {
-    return gulp.src('app/scss/styles.scss') // Основной SCSS файл
+    return gulp.src('app/scss/*.scss') // Основной SCSS файл
         .pipe(sass().on('error', sass.logError)) // Компиляция SCSS
         .pipe(gulp.dest('dist/css')) // Выходной каталог
         .pipe(browserSync.stream()); // Обновление браузера
