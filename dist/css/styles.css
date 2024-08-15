@@ -468,6 +468,9 @@ img {
   border-style: none;
   margin-top: 28px;
 }
+.head__h2 {
+  white-space: nowrap;
+}
 
 .body-item {
   padding: 30px;
