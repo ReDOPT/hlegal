@@ -222,6 +222,9 @@ img{
         margin-top: 30px;
         font-size: 1.375em;
         color: #24A3FF;
+        &:hover{
+            color: #F0145A;
+        }
     }
     &__p{
         margin-top: 15px;

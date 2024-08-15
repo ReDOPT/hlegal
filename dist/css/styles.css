@@ -232,6 +232,9 @@ img {
   font-size: 1.375em;
   color: #24A3FF;
 }
+.services__h3:hover {
+  color: #F0145A;
+}
 .services__p {
   margin-top: 15px;
   font-weight: 400;
