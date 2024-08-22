@@ -26,10 +26,29 @@ img{
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     border-radius:0 0 12px 12px ;
     &__div{
+        height: 100vb;
+        background-size: cover;
         background-image: url("../images/symbol.svg");
         background-repeat:no-repeat ;
         background-position: center;
     }
+}
+.header__with{
+    a{color: black;}
+    .header__menu-info-map,
+    .header__menu-info-tel,
+    .header__menu-info-facebook-svg,
+    .header__menu-info-language{
+            color: #B3B3BA;
+        a{color: #B3B3BA;}
+    }
+    .header__btn-fill{
+        background-color: #323264;
+        border-radius: 12px;
+    }
+    .header__h3{
+        color: #000000;
+    }  
 }
 .header{
     padding-top: 50px;
@@ -68,6 +87,7 @@ img{
             padding: 5px;
             border-radius: 8px;
             &:last-child{
+                color: white;
                 background-color: #F0145A;
             }
         }
@@ -350,11 +370,14 @@ img{
     width: 31.81818181818182%;
     &__div{
         margin: 0 auto;
+        margin-top: 30px;
         width: 85.71428571428571%;    
     }
     &__h4{
-        margin-top: 30px;
         color: #24A3FF;
+        &:hover{
+            color: #F0145A;
+        }
     }
     &__title{
         margin-top: 15px;
@@ -462,6 +485,9 @@ img{
         color: white;
         border-style: none;
         margin-top: 28px;
+        &:hover{
+            box-shadow: 3px 3px 8px black;
+        }
     }
     &__h2{
         white-space: nowrap;
@@ -493,6 +519,40 @@ img{
         }
     }
 }
+.boxbutton{
+    background-color: #E6E6F0;
+    width: 233px;
+    height: 42px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    border-radius: 10px;
+    &__button{
+        border: none;
+        border-radius: 10px;
+        height: 100%;
+        width: 105px;
+        background-color: #FFFFFF;
+
+        font-weight: 700;
+        text-transform:uppercase;
+        &:last-child{
+            background-color: #E6E6F0;
+        }
+        &:hover{
+            background-color: #FFFFFF;
+        }
+    }
+}
+.btn-box{
+    display: flex;
+}
+.publications_btn_width{
+    width:211px;
+    height:56px;
+    margin: 0 auto !important;
+}
 
 @media screen and (min-width:1920px) {
     .conteiner{
@@ -516,6 +576,9 @@ img{
             }
         }
     }
+}
+.news{
+    margin-top: 90px;
 }
 @media screen and (max-width:1024px) {
     .conteiner,
@@ -632,7 +695,6 @@ img{
         width: 84.375%;
     }
     .header{
-        padding-bottom: 200px;
         padding-top: 60px;
         position: relative;
         &__menu-info{
@@ -800,4 +862,10 @@ img{
             width: 100%;
         }
     }
+    .news{
+        margin-top: 30px;
+    }
+}
+.section_boots{
+    width: 100%;
 }

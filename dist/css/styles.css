@@ -32,9 +32,34 @@ img {
   border-radius: 0 0 12px 12px;
 }
 .body__div {
+  height: 100vb;
+  background-size: cover;
   background-image: url("../images/symbol.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.header__with a {
+  color: black;
+}
+.header__with .header__menu-info-map,
+.header__with .header__menu-info-tel,
+.header__with .header__menu-info-facebook-svg,
+.header__with .header__menu-info-language {
+  color: #B3B3BA;
+}
+.header__with .header__menu-info-map a,
+.header__with .header__menu-info-tel a,
+.header__with .header__menu-info-facebook-svg a,
+.header__with .header__menu-info-language a {
+  color: #B3B3BA;
+}
+.header__with .header__btn-fill {
+  background-color: #323264;
+  border-radius: 12px;
+}
+.header__with .header__h3 {
+  color: #000000;
 }
 
 .header {
@@ -77,6 +102,7 @@ img {
   border-radius: 8px;
 }
 .header__menu-info-language a:last-child {
+  color: white;
   background-color: #F0145A;
 }
 .header__menu-info-language a:hover {
@@ -362,11 +388,14 @@ img {
 }
 .section__div {
   margin: 0 auto;
+  margin-top: 30px;
   width: 85.7142857143%;
 }
 .section__h4 {
-  margin-top: 30px;
   color: #24A3FF;
+}
+.section__h4:hover {
+  color: #F0145A;
 }
 .section__title {
   margin-top: 15px;
@@ -468,6 +497,9 @@ img {
   border-style: none;
   margin-top: 28px;
 }
+.head__btn:hover {
+  box-shadow: 3px 3px 8px black;
+}
 .head__h2 {
   white-space: nowrap;
 }
@@ -499,6 +531,42 @@ img {
   color: #F0145A;
 }
 
+.boxbutton {
+  background-color: #E6E6F0;
+  width: 233px;
+  height: 42px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+  border-radius: 10px;
+}
+.boxbutton__button {
+  border: none;
+  border-radius: 10px;
+  height: 100%;
+  width: 105px;
+  background-color: #FFFFFF;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.boxbutton__button:last-child {
+  background-color: #E6E6F0;
+}
+.boxbutton__button:hover {
+  background-color: #FFFFFF;
+}
+
+.btn-box {
+  display: flex;
+}
+
+.publications_btn_width {
+  width: 211px;
+  height: 56px;
+  margin: 0 auto !important;
+}
+
 @media screen and (min-width: 1920px) {
   .conteiner {
     width: 83.3333333333%;
@@ -520,6 +588,10 @@ img {
     border-radius: 0 0 12px 0;
   }
 }
+.news {
+  margin-top: 90px;
+}
+
 @media screen and (max-width: 1024px) {
   .conteiner,
   .compani {
@@ -620,7 +692,6 @@ img {
     width: 84.375%;
   }
   .header {
-    padding-bottom: 200px;
     padding-top: 60px;
     position: relative;
   }
@@ -767,4 +838,10 @@ img {
   .body-item__ul {
     width: 100%;
   }
+  .news {
+    margin-top: 30px;
+  }
+}
+.section_boots {
+  width: 100%;
 }
